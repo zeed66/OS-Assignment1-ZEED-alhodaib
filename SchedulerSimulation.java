@@ -279,18 +279,20 @@ public class SchedulerSimulation {
             }
         }
         
-        // End of the scheduler simulation
+      // End of the scheduler simulation
         System.out.println(Colors.BOLD + Colors.BRIGHT_GREEN + 
                           "╔════════════════════════════════════════════════════════════════════════════════╗" + 
                           Colors.RESET);
         System.out.println(Colors.BOLD + Colors.BRIGHT_GREEN + "║" + Colors.RESET + 
                           Colors.BG_GREEN + Colors.WHITE + Colors.BOLD + 
-                          "                     ✓  ALL PROCESSES COMPLETED  ✓  " + 
-                           System.out.println(Colors.BOLD + Colors.CYAN + "Total Context Switches: " + contextSwitches + Colors.RESET);
+                          "                     ✓  ALL PROCESSES COMPLETED  ✓                      " + 
                           Colors.RESET + Colors.BOLD + Colors.BRIGHT_GREEN + "║" + Colors.RESET);
         System.out.println(Colors.BOLD + Colors.BRIGHT_GREEN + 
                           "╚════════════════════════════════════════════════════════════════════════════════╝" + 
                           Colors.RESET + "\n");
+
+        // هذا هو المكان الصحيح والوحيد لطباعة العداد النهائي
+        System.out.println(Colors.BOLD + Colors.CYAN + "Total Context Switches: " + contextSwitches + Colors.RESET);
     }
     
     // Method to add a process to the queue and map, while printing a "ready" message
