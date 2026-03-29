@@ -25,13 +25,15 @@ class Colors {
 
 // Class representing a process that implements Runnable to be run by a thread
 class Process implements Runnable {
-    private String name; // Name of the process
-    private int burstTime; // Total time the process requires to complete (in milliseconds)
+    private String name;
+    private int priority;// Name of the process
+    private int burstTime;     // Total time the process requires to complete (in milliseconds)
     private int timeQuantum; // Time slice (time quantum) allowed per CPU access (in milliseconds)
     private int remainingTime; // Time left for the process to finish its execution
 
     // Constructor to initialize the process with name, burst time, and time quantum
     public Process(String name, int burstTime, int timeQuantum) {
+        this.priority=(int)(Math.random() *5) + 1;
         this.name = name;
         this.burstTime = burstTime;
         this.timeQuantum = timeQuantum;
