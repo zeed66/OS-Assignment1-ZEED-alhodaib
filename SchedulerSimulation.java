@@ -291,7 +291,7 @@ public class SchedulerSimulation {
                           "╚════════════════════════════════════════════════════════════════════════════════╝" + 
                           Colors.RESET + "\n");
 
-        // هذا هو المكان الصحيح والوحيد لطباعة العداد النهائي
+        
         System.out.println(Colors.BOLD + Colors.CYAN + "Total Context Switches: " + contextSwitches + Colors.RESET);
     }
     
