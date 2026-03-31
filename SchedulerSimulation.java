@@ -30,7 +30,7 @@ class Process implements Runnable {
     private int burstTime;     // Total time the process requires to complete (in milliseconds)
     private int timeQuantum; // Time slice (time quantum) allowed per CPU access (in milliseconds)
     private int remainingTime; // Time left for the process to finish its execution
-    private long startTime; 
+    public long startTime; 
 
     // Constructor to initialize the process with name, burst time, and time quantum
     public Process(String name, int burstTime, int timeQuantum) {
@@ -293,6 +293,14 @@ public class SchedulerSimulation {
 
         
         System.out.println(Colors.BOLD + Colors.CYAN + "Total Context Switches: " + contextSwitches + Colors.RESET);
+        
+System.out.println("\nProcess Summary:");
+System.out.println("Name\tBurst Time\tWaiting Time");
+
+for (Process p : processMap.values()) {
+    long waitingTime = System.currentTimeMillis() - p.startTime;
+    System.out.println(p.getName() + "\t" + p.getBurstTime() + "\t\t" + waitingTime + " ms");
+}
     }
     
     // Method to add a process to the queue and map, while printing a "ready" message
