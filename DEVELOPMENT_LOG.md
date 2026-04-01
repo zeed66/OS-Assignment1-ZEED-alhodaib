@@ -1,121 +1,86 @@
 # Development Log
 
-## Instructions
-Document your development process as you work on the assignment. Add entries showing:
-- What you worked on
-- Problems you encountered
-- How you solved them
-- Time spent
+### Entry 1 - March 28, 2026, 3:00 AM
+**What I did**: Set up GitHub repository and ran the initial code
 
-**Requirements**: Minimum 5 entries showing progression over time.
+**Details**:
+- Forked the repository from GitHub
+- Changed student ID in SchedulerSimulation.java
+- Ran the program and observed output
 
----
+**Challenges**: Understanding how the code works at first
 
-## Example Entry Format:
+**Solution**: Read the code step by step and matched it with OS concepts
 
-### Entry 1 - [April 1, 2026, 2:30 PM]
-**What I did**: Forked the repository and set up my student ID
+**Time spent**: 1 hour
 
-**Details**: 
-- Created GitHub account with university email
-- Forked the starter repository
-- Changed student ID on line 92 to my actual ID (441234567)
-- Compiled and ran the program successfully
 
-**Challenges**: Had to install JDK first because javac wasn't recognized
 
-**Solution**: Downloaded JDK 17 from Oracle website and set PATH variable
+### Entry 2 - March 29, 2026, 7:15AM
+**What I did**: Implemented Feature 1 (Priority)
 
-**Time spent**: 30 minutes
+**Details**:
+- Added priority field to Process class
+- Generated random values (1-5)
+- Displayed priority in ready queue
 
----
+**Challenges**: Understanding where to print priority
 
-## Your Development Log:
+**Solution**: Used addProcessToQueue method
 
-### Entry 1 - [Date and Time]
-**What I did**: 
+**Time spent**: 1.5 hours
 
-**Details**: 
 
-**Challenges**: 
+### Entry 3 - March 29, 2026, 8:51Am
+**What I did**: Implemented Feature 2 (Context Switch)
 
-**Solution**: 
+**Details**:
+- Added counter variable
+- Incremented it in scheduler loop
+- Printed total at the end
 
-**Time spent**: 
+**Challenges**: Knowing where context switch happens
 
----
+**Solution**: Added it before thread.start()
 
-### Entry 2 - [Date and Time]
-**What I did**: 
+**Time spent**: 1.5h
 
-**Details**: 
 
-**Challenges**: 
 
-**Solution**: 
+### Entry 4 - March 29, 2026, 9:08AM
+**What I did**: Implemented Feature 3 (Waiting Time)
 
-**Time spent**: 
+**Details**:
+- Used System.currentTimeMillis()
+- Calculated waiting time
+- Added summary table
 
----
+**Challenges**: Understanding waiting time concept
 
-### Entry 3 - [Date and Time]
-**What I did**: 
+**Solution**: Used approximation method
 
-**Details**: 
+**Time spent**: 30min
 
-**Challenges**: 
 
-**Solution**: 
 
-**Time spent**: 
+### Entry 5 - March 31, 2026, 6:00AM
+**What I did**: Testing and final adjustments
 
----
+**Details**:
+- Ran program multiple times
+- Checked output formatting
+- Added comments for features
 
-### Entry 4 - [Date and Time]
-**What I did**: 
+**Challenges**: Minor formatting issues
 
-**Details**: 
+**Solution**: Adjusted print statements
 
-**Challenges**: 
+**Time spent**: 1 hour
 
-**Solution**: 
 
-**Time spent**: 
-
----
-
-### Entry 5 - [Date and Time]
-**What I did**: 
-
-**Details**: 
-
-**Challenges**: 
-
-**Solution**: 
-
-**Time spent**: 
-
----
-
-### Entry 6 - [Optional - Date and Time]
-**What I did**: 
-
-**Details**: 
-
-**Challenges**: 
-
-**Solution**: 
-
-**Time spent**: 
-
----
 
 ## Summary
-
-**Total time spent on assignment**: [X hours]
-
-**Most challenging part**: 
-
-**Most interesting learning**: 
-
-**What I would do differently next time**: 
+**Total time spent**: 7hours  
+**Most challenging part**: Waiting time calculation  
+**Most interesting learning**: Thread scheduling  
+**What I would do differently**: Plan features earlier
